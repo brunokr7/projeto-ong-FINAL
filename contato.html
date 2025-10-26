@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ONG — Modelo (Contato)</title>
+  <meta name="description" content="Página de contato — formulário de contato acessível.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="Nome da ONG - preencher">
+        <span class="logo">[LOGO]</span>
+      </a>
+      <button id="nav-toggle-4" aria-expanded="false" aria-controls="primary-nav-4">Menu</button>
+      <nav id="primary-nav-4" class="primary-nav" role="navigation" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <h1 tabindex="0">Contato</h1>
+
+    <form id="contact-form" action="#" method="post" novalidate aria-describedby="form-desc">
+      <p id="form-desc">Preencha o formulário para entrar em contato. (Action deve ser configurada no servidor)</p>
+
+      <label for="name">Nome</label>
+      <input id="name" name="name" type="text" required aria-required="true">
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required aria-required="true">
+
+      <label for="message">Mensagem</label>
+      <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <section aria-labelledby="contact-info">
+      <h2 id="contact-info">Outras formas de contato</h2>
+      <p><!-- TODO: preencher telefone, endereço, redes sociais -->[Contato]</p>
+    </section>
+  </main>
+
+  <footer role="contentinfo" class="site-footer">
+    <div class="container">
+      <p>[Informação de rodapé]</p>
+    </div>
+  </footer>
+
+  <script src="js/main.min.js" defer></script>
+</body>
+</html>
